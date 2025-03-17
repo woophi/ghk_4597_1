@@ -60,13 +60,7 @@ export const App = () => {
   return (
     <>
       <div className={appSt.container}>
-        <Typography.TitleResponsive
-          style={{ margin: '1rem 0 .5rem' }}
-          tag="h1"
-          view="medium"
-          font="system"
-          weight="semibold"
-        >
+        <Typography.TitleResponsive style={{ marginTop: '1rem' }} tag="h1" view="medium" font="system" weight="semibold">
           Сумма взноса
         </Typography.TitleResponsive>
 
@@ -83,7 +77,6 @@ export const App = () => {
             </Typography.Text>
           </div>
         </div>
-        <div />
 
         <Input
           hint="От 2000 до 3 000 000 ₽"
@@ -99,7 +92,7 @@ export const App = () => {
         />
 
         <div>
-          <Swiper spaceBetween={12} slidesPerView="auto" style={{ marginTop: '.5rem' }}>
+          <Swiper spaceBetween={12} slidesPerView="auto">
             {chips.map(chip => (
               <SwiperSlide key={chip} className={appSt.swSlide}>
                 <Tag view="filled" size="xxs" shape="rectangular" onClick={() => setSum(String(chip))}>
