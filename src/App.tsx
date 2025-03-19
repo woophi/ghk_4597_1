@@ -92,7 +92,7 @@ export const App = () => {
         </div>
 
         <Input
-          hint="От 2000 до 3 000 000 ₽"
+          hint="От 2 000 до 3 000 000 ₽"
           type="number"
           min={min}
           max={max}
