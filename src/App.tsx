@@ -14,7 +14,7 @@ import { sendDataToGA } from './utils/events';
 const min = 2000;
 const max = 3_000_000;
 
-const chips = [2000, 5000, 15000, 25000];
+const chips = [2000, 5000, 15000, 36000];
 
 export const App = () => {
   const [loading, setLoading] = useState(false);
